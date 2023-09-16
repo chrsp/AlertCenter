@@ -39,19 +39,21 @@ public class ToastAnimator: AlertAnimator {
             alertView.frame = finalFrame
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-            self?.reverseAnimator = UIViewPropertyAnimator(duration: 0.3, timingParameters: timingParameters)
-            
-            self?.reverseAnimator?.addAnimations {
-                alertView.layer.position.y += alertView.frame.height * 1.3
+        animator?.addCompletion { _ in
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+                self?.reverseAnimator?.startAnimation()
             }
-            
-            self?.reverseAnimator?.addCompletion { _ in
-                self?.isAnimating = false
-                completion()
-            }
-            
-            self?.reverseAnimator?.startAnimation()
+        }
+        
+        reverseAnimator = UIViewPropertyAnimator(duration: 0.3, timingParameters: timingParameters)
+        
+        reverseAnimator?.addAnimations {
+            alertView.layer.position.y += alertView.frame.height * 1.3
+        }
+        
+        reverseAnimator?.addCompletion { _ in
+            self.isAnimating = false
+            completion()
         }
         
         isAnimating = true

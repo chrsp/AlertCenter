@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		347E31522AB4BC2A00EBFD4D /* ToastAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E31512AB4BC2A00EBFD4D /* ToastAlertViewController.swift */; };
 		347E31572AB4BC2C00EBFD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347E31562AB4BC2C00EBFD4D /* Assets.xcassets */; };
 		347E315A2AB4BC2C00EBFD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E31582AB4BC2C00EBFD4D /* LaunchScreen.storyboard */; };
-		34821CC32AB4D18000C14297 /* AnimatedAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 34821CC22AB4D18000C14297 /* AnimatedAlert */; };
+		3489F0532AB604A100C33021 /* AnimatedAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 3489F0522AB604A100C33021 /* AnimatedAlert */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34821CC32AB4D18000C14297 /* AnimatedAlert in Frameworks */,
+				3489F0532AB604A100C33021 /* AnimatedAlert in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			);
 			name = AnimatedAlertExample;
 			packageProductDependencies = (
-				34821CC22AB4D18000C14297 /* AnimatedAlert */,
+				3489F0522AB604A100C33021 /* AnimatedAlert */,
 			);
 			productName = ToastAlertExample;
 			productReference = 347E314A2AB4BC2A00EBFD4D /* AnimatedAlertExample.app */;
@@ -122,7 +122,7 @@
 			);
 			mainGroup = 347E31412AB4BC2A00EBFD4D;
 			packageReferences = (
-				34CED3DC2AB4D10F001C4508 /* XCRemoteSwiftPackageReference "AnimatedAlert" */,
+				3489F0512AB604A100C33021 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = 347E314B2AB4BC2A00EBFD4D /* Products */;
 			projectDirPath = "";
@@ -361,21 +361,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		34CED3DC2AB4D10F001C4508 /* XCRemoteSwiftPackageReference "AnimatedAlert" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/chrsp/AnimatedAlert";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		3489F0512AB604A100C33021 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		34821CC22AB4D18000C14297 /* AnimatedAlert */ = {
+		3489F0522AB604A100C33021 /* AnimatedAlert */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 34CED3DC2AB4D10F001C4508 /* XCRemoteSwiftPackageReference "AnimatedAlert" */;
 			productName = AnimatedAlert;
 		};
 /* End XCSwiftPackageProductDependency section */

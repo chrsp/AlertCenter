@@ -1,15 +1,23 @@
+//
+//  ToastAlertViewController.swift
+//
+//
+//  Created by Charles Prado on 15/09/2023.
+//
+
 import UIKit
 import AnimatedAlert
 import Combine
 
 class ToastAlertViewController: UIViewController {
 
-    let displayToastInThisViewBtn = UIButton(type: .system)
-    let displayToastOnWindowBtn = UIButton(type: .system)
-    let displayToastWithActionBtn = UIButton(type: .system)
-    let displayToastOnWindowWithActionBtn = UIButton(type: .system)
-    let goToOtherScreenBtn = UIButton(type: .system)
-    let toastsOnQueueLabel = UILabel()
+    private let displayToastInThisViewBtn = UIButton(type: .system)
+    private let displayToastOnWindowBtn = UIButton(type: .system)
+    private let displayToastWithActionBtn = UIButton(type: .system)
+    private let displayToastOnWindowWithActionBtn = UIButton(type: .system)
+    private let goToOtherScreenBtn = UIButton(type: .system)
+    private let toastsOnQueueLabel = UILabel()
+    private let displayTime: TimeInterval = 2.0
 
     private var cancellables: Set<AnyCancellable> = []
 
@@ -20,7 +28,12 @@ class ToastAlertViewController: UIViewController {
         view.backgroundColor = .white
 
         let buttonStack = UIStackView(arrangedSubviews: [
-            displayToastInThisViewBtn, displayToastOnWindowBtn, displayToastOnWindowWithActionBtn, displayToastWithActionBtn, goToOtherScreenBtn, toastsOnQueueLabel
+            displayToastInThisViewBtn, 
+            displayToastOnWindowBtn,
+            displayToastOnWindowWithActionBtn,
+            displayToastWithActionBtn,
+            goToOtherScreenBtn,
+            toastsOnQueueLabel
         ])
 
         buttonStack.spacing = 24
@@ -35,12 +48,12 @@ class ToastAlertViewController: UIViewController {
 
         displayToastInThisViewBtn.setTitle("Display Toast", for: .normal)
         displayToastInThisViewBtn.addAction(.init { _ in
-            self.alertCenter.display(message: "Displaying on this view!", time: 1.0, onView: self.view)
+            self.alertCenter.display(message: "Displaying on this view!", time: self.displayTime, onView: self.view)
         }, for: .touchUpInside)
 
         displayToastOnWindowBtn.setTitle("Display Toast on Window", for: .normal)
         displayToastOnWindowBtn.addAction(.init { _ in
-            self.alertCenter.display(message: "Displaying on the window!", time: 3.0, onView: nil)
+            self.alertCenter.display(message: "Displaying on the window!", time: self.displayTime, onView: nil)
         }, for: .touchUpInside)
 
         displayToastOnWindowWithActionBtn.setTitle("Toast With Action", for: .normal)
@@ -50,13 +63,13 @@ class ToastAlertViewController: UIViewController {
         })
 
         displayToastOnWindowWithActionBtn.addAction(.init { _ in
-            self.alertCenter.display(message: "Displaying With Action", time: 3.0, onView: self.view, action: action)
+            self.alertCenter.display(message: "Displaying With Action", time: self.displayTime, onView: self.view, action: action)
         }, for: .touchUpInside)
 
         displayToastWithActionBtn.setTitle("Toast on Window With Action", for: .normal)
 
         displayToastWithActionBtn.addAction(.init { _ in
-            self.alertCenter.display(message: "Displaying With Action", time: 2.0, onView: nil, action: action)
+            self.alertCenter.display(message: "Displaying With Action", time: self.displayTime, onView: nil, action: action)
         }, for: .touchUpInside)
 
 
@@ -79,7 +92,7 @@ class ToastAlertViewController: UIViewController {
 
     private func navigate() {
         let nextViewController = UIViewController()
-        nextViewController.view.backgroundColor = .systemTeal
+        nextViewController.view.backgroundColor = .white
 
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }

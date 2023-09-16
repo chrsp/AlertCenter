@@ -21,7 +21,6 @@ public extension AlertCenter {
         alertQueue.append(alert)
 
         if !animator.isAnimating {
-            print("here")
             self.displayNextAlert(time: time, view: view)
         }
     }
