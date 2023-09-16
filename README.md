@@ -96,6 +96,6 @@ AnimatedAlert is available under the MIT license. See the [LICENSE](LICENSE) fil
 
 ---
 
-If you have any questions, encounter issues, or would like to make suggestions, please don't hesitate to [send me an email](mailto:chrspx@gmail.com) or [leave a message](https://twitter.com/ch0Rx).
+If you have any questions, encounter issues, or would like to make suggestions, please don't hesitate to [send me an email](mailto:chrspx@gmail.com) or [leave me a message](https://twitter.com/ch0Rx).
 
 I hope you find AnimatedAlert a valuable addition to your iOS development toolkit. Happy coding! 😉
