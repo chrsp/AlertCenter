@@ -2,7 +2,11 @@
 
 ![License](https://img.shields.io/github/license/chrsp/AnimatedAlert) ![Swift Version](https://img.shields.io/badge/swift-5.5-orange.svg) ![Platform](https://img.shields.io/badge/platform-iOS%2013%2B-blue.svg)
 
-AnimatedAlert is a flexible and customizable component for displaying animated alerts in your iOS app. With AnimatedAlert, you have full control over the animation and the view used to present your alerts, making it a powerful tool for enhancing user experience in your app. It can also serve as a replacement for the Material SnackBar component, which was discontinued in 2021.
+AnimatedAlert is a flexible and customizable component for displaying animated alerts in your iOS app. It gives you full control over the animation and the view used to present your alerts, making it a powerful tool for enhancing user experience in your app.
+
+## Motivation
+
+AnimatedAlert was originally created as a replacement for [MDCSnackBar](https://m2.material.io/components/snackbars/ios), which Google discontinued in 2021. While it can serve as a drop-in replacement for SnackBars using the provided `ToastAlertCenter` class, AnimatedAlert goes further by allowing you to create your own custom animated alerts and even design custom animations.
 
 ## Installation
 
@@ -21,10 +25,14 @@ The heart of the AnimatedAlert component lies in the `AlertCenter` protocol, whi
 
 ```swift
 public protocol AlertCenter: AnyObject {
-    associatedtype AlertView: AnimatedAlert // 1
-    var animator: AlertAnimator { get set } // 2
-    var alertQueue: [AlertView] { get set } // 3
-    func display(message: String, time: TimeInterval, onView: UIView?, action: ToastAction?) // 4
+    // 1
+    associatedtype AlertView: AnimatedAlert
+    // 2
+    var animator: AlertAnimator { get set }
+    // 3
+    var alertQueue: [AlertView] { get set }
+    // 4
+    func display(message: String, time: TimeInterval, onView: UIView?, action: ToastAction?) 
 }
 ```
 
@@ -64,7 +72,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed on this view!", time: 1.0, onView: self.view)
    ```
 
-   ![animated_alert_normal_display](https://github.com/chrsp/ToastAlert/assets/2355749/0a8fd13b-3010-4c88-9a90-9aecc3eaaade)
+   ![dos](https://github.com/chrsp/AnimatedAlert/assets/2355749/f24968a2-8ed9-4910-a110-644a4929b43a)
 
 2. **Display on the Window**:
 
@@ -72,7 +80,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed on the window!", time: 1.0, onView: nil)
    ```
 
-   ![animated_alert_normal_display_on_window](https://github.com/chrsp/ToastAlert/assets/2355749/3fa2ec95-857c-4d68-83f7-bdf76ea7be8b)
+   ![donw](https://github.com/chrsp/AnimatedAlert/assets/2355749/15401b1d-99d7-4ae4-98a3-6e032681db78)
 
 3. **Display with an Action Button**:
 
@@ -80,7 +88,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed with Action", time: 2.0, onView: self.view, action: action)
    ```
 
-   ![animated_alert_normal_display_w_button](https://github.com/chrsp/ToastAlert/assets/2355749/f419dd19-da88-46bf-b592-5609a9f5bdaa)
+   ![doswa](https://github.com/chrsp/AnimatedAlert/assets/2355749/ddb57092-d53e-4ef7-b698-966c4ee4b567)
 
 4. **Display Action on the Window**:
 
@@ -88,7 +96,8 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed with Action", time: 2.0, onView: nil, action: action)
    ```
 
-   ![animated_alert_window_display_w_button](https://github.com/chrsp/ToastAlert/assets/2355749/69dd6af1-02e6-4ddf-9316-70e67283a3b4)
+   ![dowwa](https://github.com/chrsp/AnimatedAlert/assets/2355749/d4fd3433-ef4a-4fab-86a4-ae29325ff7a7)
+
 
 ## License
 
