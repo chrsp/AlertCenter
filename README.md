@@ -94,15 +94,8 @@ Finally, choose how you want to present your Animated Alert:
 
 AnimatedAlert is available under the MIT license. See the [LICENSE](LICENSE) file for more information.
 
-## Contributing
-
-If you'd like to contribute to AnimatedAlert, please see our [Contribution Guidelines](CONTRIBUTING.md).
-
-## Contact
+---
 
 If you have any questions, encounter issues, or would like to make suggestions, please don't hesitate to [send me an email](mailto:chrspx@gmail.com) or [leave a message](https://twitter.com/ch0Rx).
 
----
-
 I hope you find AnimatedAlert a valuable addition to your iOS development toolkit. Happy coding! 😉
-
