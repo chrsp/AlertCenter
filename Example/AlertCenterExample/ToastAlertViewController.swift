@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AnimatedAlert
+import AlertCenter
 import Combine
 
 class ToastAlertViewController: UIViewController {

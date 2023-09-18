@@ -12,11 +12,11 @@
 		347E31522AB4BC2A00EBFD4D /* ToastAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E31512AB4BC2A00EBFD4D /* ToastAlertViewController.swift */; };
 		347E31572AB4BC2C00EBFD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347E31562AB4BC2C00EBFD4D /* Assets.xcassets */; };
 		347E315A2AB4BC2C00EBFD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347E31582AB4BC2C00EBFD4D /* LaunchScreen.storyboard */; };
-		3489F0532AB604A100C33021 /* AnimatedAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 3489F0522AB604A100C33021 /* AnimatedAlert */; };
+		3482B51A2AB84CA800E35726 /* AlertCenter in Frameworks */ = {isa = PBXBuildFile; productRef = 3482B5192AB84CA800E35726 /* AlertCenter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		347E314A2AB4BC2A00EBFD4D /* AnimatedAlertExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedAlertExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		347E314A2AB4BC2A00EBFD4D /* AlertCenterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertCenterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347E314D2AB4BC2A00EBFD4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		347E314F2AB4BC2A00EBFD4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		347E31512AB4BC2A00EBFD4D /* ToastAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastAlertViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3489F0532AB604A100C33021 /* AnimatedAlert in Frameworks */,
+				3482B51A2AB84CA800E35726 /* AlertCenter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +40,7 @@
 		347E31412AB4BC2A00EBFD4D = {
 			isa = PBXGroup;
 			children = (
-				347E314C2AB4BC2A00EBFD4D /* AnimatedAlertExample */,
+				347E314C2AB4BC2A00EBFD4D /* AlertCenterExample */,
 				347E314B2AB4BC2A00EBFD4D /* Products */,
 				347E31802AB4BCA600EBFD4D /* Frameworks */,
 			);
@@ -49,12 +49,12 @@
 		347E314B2AB4BC2A00EBFD4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				347E314A2AB4BC2A00EBFD4D /* AnimatedAlertExample.app */,
+				347E314A2AB4BC2A00EBFD4D /* AlertCenterExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		347E314C2AB4BC2A00EBFD4D /* AnimatedAlertExample */ = {
+		347E314C2AB4BC2A00EBFD4D /* AlertCenterExample */ = {
 			isa = PBXGroup;
 			children = (
 				347E314D2AB4BC2A00EBFD4D /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				347E31582AB4BC2C00EBFD4D /* LaunchScreen.storyboard */,
 				347E315B2AB4BC2C00EBFD4D /* Info.plist */,
 			);
-			path = AnimatedAlertExample;
+			path = AlertCenterExample;
 			sourceTree = "<group>";
 		};
 		347E31802AB4BCA600EBFD4D /* Frameworks */ = {
@@ -77,9 +77,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		347E31492AB4BC2A00EBFD4D /* AnimatedAlertExample */ = {
+		347E31492AB4BC2A00EBFD4D /* AlertCenterExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 347E31742AB4BC2C00EBFD4D /* Build configuration list for PBXNativeTarget "AnimatedAlertExample" */;
+			buildConfigurationList = 347E31742AB4BC2C00EBFD4D /* Build configuration list for PBXNativeTarget "AlertCenterExample" */;
 			buildPhases = (
 				347E31462AB4BC2A00EBFD4D /* Sources */,
 				347E31472AB4BC2A00EBFD4D /* Frameworks */,
@@ -89,12 +89,12 @@
 			);
 			dependencies = (
 			);
-			name = AnimatedAlertExample;
+			name = AlertCenterExample;
 			packageProductDependencies = (
-				3489F0522AB604A100C33021 /* AnimatedAlert */,
+				3482B5192AB84CA800E35726 /* AlertCenter */,
 			);
 			productName = ToastAlertExample;
-			productReference = 347E314A2AB4BC2A00EBFD4D /* AnimatedAlertExample.app */;
+			productReference = 347E314A2AB4BC2A00EBFD4D /* AlertCenterExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 347E31452AB4BC2A00EBFD4D /* Build configuration list for PBXProject "AnimatedAlertExample" */;
+			buildConfigurationList = 347E31452AB4BC2A00EBFD4D /* Build configuration list for PBXProject "AlertCenterExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,13 +122,13 @@
 			);
 			mainGroup = 347E31412AB4BC2A00EBFD4D;
 			packageReferences = (
-				3489F0512AB604A100C33021 /* XCLocalSwiftPackageReference ".." */,
+				3482B5182AB84CA800E35726 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = 347E314B2AB4BC2A00EBFD4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				347E31492AB4BC2A00EBFD4D /* AnimatedAlertExample */,
+				347E31492AB4BC2A00EBFD4D /* AlertCenterExample */,
 			);
 		};
 /* End PBXProject section */
@@ -293,7 +293,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8D69GAM5D6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimatedAlertExample/Info.plist;
+				INFOPLIST_FILE = AlertCenterExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -303,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.holografix.animatedalertexample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.holografix.alertcenterexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8D69GAM5D6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimatedAlertExample/Info.plist;
+				INFOPLIST_FILE = AlertCenterExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -330,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.holografix.animatedalertexample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.holografix.alertcenterexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		347E31452AB4BC2A00EBFD4D /* Build configuration list for PBXProject "AnimatedAlertExample" */ = {
+		347E31452AB4BC2A00EBFD4D /* Build configuration list for PBXProject "AlertCenterExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				347E31722AB4BC2C00EBFD4D /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		347E31742AB4BC2C00EBFD4D /* Build configuration list for PBXNativeTarget "AnimatedAlertExample" */ = {
+		347E31742AB4BC2C00EBFD4D /* Build configuration list for PBXNativeTarget "AlertCenterExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				347E31752AB4BC2C00EBFD4D /* Debug */,
@@ -362,16 +362,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3489F0512AB604A100C33021 /* XCLocalSwiftPackageReference ".." */ = {
+		3482B5182AB84CA800E35726 /* XCLocalSwiftPackageReference ".." */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3489F0522AB604A100C33021 /* AnimatedAlert */ = {
+		3482B5192AB84CA800E35726 /* AlertCenter */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AnimatedAlert;
+			productName = AlertCenter;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
