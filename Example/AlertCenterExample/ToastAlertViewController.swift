@@ -58,9 +58,7 @@ class ToastAlertViewController: UIViewController {
 
         displayToastOnWindowWithActionBtn.setTitle("Toast With Action", for: .normal)
 
-        let action = ToastAction(title: "Navigate", action: .init { _ in
-            self.navigate()
-        })
+        let action = ToastAction(title: "Navigate", target: self, selector: #selector(navigate))
 
         displayToastOnWindowWithActionBtn.addAction(.init { _ in
             self.alertCenter.display(message: "Displaying With Action", time: self.displayTime, onView: self.view, action: action)
@@ -90,7 +88,7 @@ class ToastAlertViewController: UIViewController {
         .store(in: &cancellables)
     }
 
-    private func navigate() {
+    @objc private func navigate() {
         let nextViewController = UIViewController()
         nextViewController.view.backgroundColor = .white
 

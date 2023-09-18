@@ -57,7 +57,7 @@ public class MDCSnackbarToastAlert: UIView, AnimatedAlert {
 
         if let action = action {
             actionButton.setTitle(action.title.uppercased(), for: .normal)
-            actionButton.addAction(action.action, for: .touchUpInside)
+            actionButton.addTarget(action.target, action: action.selector, for: .touchUpInside)
             actionButton.isHidden = false
         } else {
             actionButton.isHidden = true

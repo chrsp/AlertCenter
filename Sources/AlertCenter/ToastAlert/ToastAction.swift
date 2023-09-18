@@ -9,10 +9,12 @@ import UIKit
 
 public struct ToastAction {
     var title: String
-    var action: UIAction
+    var target: AnyObject
+    var selector: Selector
 
-    public init(title: String, action: UIAction) {
+    public init(title: String, target: AnyObject, selector: Selector) {
         self.title = title
-        self.action = action
+        self.target = target
+        self.selector = selector
     }
 }
