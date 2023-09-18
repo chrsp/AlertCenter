@@ -16,7 +16,7 @@ public protocol AlertCenter: AnyObject {
 
 public extension AlertCenter {
     func display(message: String, time: TimeInterval, onView view: UIView?, action: ToastAction? = nil)  {
-        let alert = AlertView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60))
+        let alert = AlertView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
         alert.configure(text: message, action: action)
         alertQueue.append(alert)
 

@@ -17,8 +17,12 @@ public class MDCSnackbarToastAlert: UIView, AnimatedAlert {
 
         backgroundColor = UIColor(hex: "#343434")
 
-        layer.cornerRadius = 8
-        layer.masksToBounds = true
+        layer.cornerRadius = 4
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 6)
+        layer.shadowOpacity = 0.3
+        layer.shadowRadius = 5
 
         textLabel.numberOfLines = 0
         textLabel.adjustsFontSizeToFitWidth = true

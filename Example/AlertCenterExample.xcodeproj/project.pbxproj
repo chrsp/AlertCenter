@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34139CCE2AB8663500AC8E36 /* AlertCenter in Frameworks */ = {isa = PBXBuildFile; productRef = 34139CCD2AB8663500AC8E36 /* AlertCenter */; };
 		347E314E2AB4BC2A00EBFD4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E314D2AB4BC2A00EBFD4D /* AppDelegate.swift */; };
 		347E31502AB4BC2A00EBFD4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E314F2AB4BC2A00EBFD4D /* SceneDelegate.swift */; };
 		347E31522AB4BC2A00EBFD4D /* ToastAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347E31512AB4BC2A00EBFD4D /* ToastAlertViewController.swift */; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34139CCE2AB8663500AC8E36 /* AlertCenter in Frameworks */,
 				3482B51A2AB84CA800E35726 /* AlertCenter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +94,7 @@
 			name = AlertCenterExample;
 			packageProductDependencies = (
 				3482B5192AB84CA800E35726 /* AlertCenter */,
+				34139CCD2AB8663500AC8E36 /* AlertCenter */,
 			);
 			productName = ToastAlertExample;
 			productReference = 347E314A2AB4BC2A00EBFD4D /* AlertCenterExample.app */;
@@ -122,7 +125,7 @@
 			);
 			mainGroup = 347E31412AB4BC2A00EBFD4D;
 			packageReferences = (
-				3482B5182AB84CA800E35726 /* XCLocalSwiftPackageReference ".." */,
+				34139CCC2AB8663500AC8E36 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = 347E314B2AB4BC2A00EBFD4D /* Products */;
 			projectDirPath = "";
@@ -220,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -298,6 +301,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,13 +367,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		3482B5182AB84CA800E35726 /* XCLocalSwiftPackageReference ".." */ = {
+		34139CCC2AB8663500AC8E36 /* XCLocalSwiftPackageReference ".." */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		34139CCD2AB8663500AC8E36 /* AlertCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AlertCenter;
+		};
 		3482B5192AB84CA800E35726 /* AlertCenter */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AlertCenter;

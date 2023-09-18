@@ -20,9 +20,9 @@ public class ToastAnimator: AlertAnimator {
                         inView view: UIView,
                         completion: @escaping () -> Void
     ) {
-        let spacing: CGFloat = 16
+        let spacing: CGFloat = 8
         let finalFrame = CGRect(x: spacing,
-                                y: view.frame.height - alertView.frame.height - spacing * 1.4,
+                                y: view.frame.height - alertView.frame.height - 16 - view.safeAreaInsets.bottom,
                                 width: view.frame.width - (spacing * 2),
                                 height: alertView.frame.height)
         
@@ -32,7 +32,8 @@ public class ToastAnimator: AlertAnimator {
         alertView.frame = initialFrame
         
         let timingParameters = UISpringTimingParameters(dampingRatio: 0.6, initialVelocity: CGVector(dx: 0, dy: 2))
-        
+        let reverseTimingParameters = UISpringTimingParameters(dampingRatio: 0.6, initialVelocity: CGVector(dx: 0, dy: 2))
+
         animator = UIViewPropertyAnimator(duration: 0.3, timingParameters: timingParameters)
         
         animator?.addAnimations {
@@ -45,10 +46,10 @@ public class ToastAnimator: AlertAnimator {
             }
         }
         
-        reverseAnimator = UIViewPropertyAnimator(duration: 0.3, timingParameters: timingParameters)
-        
+        reverseAnimator = UIViewPropertyAnimator(duration: 0.3, timingParameters: reverseTimingParameters)
+
         reverseAnimator?.addAnimations {
-            alertView.layer.position.y += alertView.frame.height * 1.3
+            alertView.layer.position.y += alertView.frame.height * 1.8
         }
         
         reverseAnimator?.addCompletion { _ in
