@@ -32,7 +32,7 @@ public class ToastAnimator: AlertAnimator {
         alertView.frame = initialFrame
         
         let timingParameters = UISpringTimingParameters(dampingRatio: 0.6, initialVelocity: CGVector(dx: 0, dy: 2))
-        let reverseTimingParameters = UISpringTimingParameters(dampingRatio: 0.6, initialVelocity: CGVector(dx: 0, dy: 2))
+        let reverseTimingParameters = UISpringTimingParameters(dampingRatio: 1.0, initialVelocity: CGVector(dx: 0, dy: 2))
 
         animator = UIViewPropertyAnimator(duration: 0.3, timingParameters: timingParameters)
         
@@ -49,7 +49,7 @@ public class ToastAnimator: AlertAnimator {
         reverseAnimator = UIViewPropertyAnimator(duration: 0.3, timingParameters: reverseTimingParameters)
 
         reverseAnimator?.addAnimations {
-            alertView.layer.position.y += alertView.frame.height * 1.8
+            alertView.layer.position.y += alertView.frame.height * 2.2
         }
         
         reverseAnimator?.addCompletion { _ in
