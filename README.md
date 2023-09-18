@@ -71,8 +71,7 @@ Finally, choose how you want to present your Animated Alert:
    ```swift
    self.alertCenter.display(message: "Displayed on this view!", time: 1.0, onView: self.view)
    ```
-
-   ![dos](https://github.com/chrsp/AlertCenter/assets/2355749/f24968a2-8ed9-4910-a110-644a4929b43a)
+   ![1](https://github.com/chrsp/AlertCenter/assets/2355749/15125e0a-4164-4136-be14-62c071081dd4)
 
 2. **Display on the Window**:
 
@@ -80,7 +79,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed on the window!", time: 1.0, onView: nil)
    ```
 
-   ![donw](https://github.com/chrsp/AlertCenter/assets/2355749/15401b1d-99d7-4ae4-98a3-6e032681db78)
+   ![2](https://github.com/chrsp/AlertCenter/assets/2355749/bfe3e735-4766-4351-aef8-218dbc477576)
 
 3. **Display with an Action Button**:
 
@@ -88,7 +87,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed with Action", time: 2.0, onView: self.view, action: action)
    ```
 
-   ![doswa](https://github.com/chrsp/AlertCenter/assets/2355749/ddb57092-d53e-4ef7-b698-966c4ee4b567)
+   ![3](https://github.com/chrsp/AlertCenter/assets/2355749/9874fe46-4cec-4f64-ac57-2a15946a4732)
 
 4. **Display Action on the Window**:
 
@@ -96,8 +95,7 @@ Finally, choose how you want to present your Animated Alert:
    self.alertCenter.display(message: "Displayed with Action", time: 2.0, onView: nil, action: action)
    ```
 
-   ![dowwa](https://github.com/chrsp/AlertCenter/assets/2355749/d4fd3433-ef4a-4fab-86a4-ae29325ff7a7)
-
+   ![4](https://github.com/chrsp/AlertCenter/assets/2355749/1c3f5d44-2f61-47f9-8e38-b63d43e4612b)
 
 ## License
 
